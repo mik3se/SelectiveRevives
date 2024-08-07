@@ -1,0 +1,47 @@
+name: SelectiveRevives
+version: 0.0.1
+main: net.xumoye.SelectiveRevives.SelectiveRevives
+api-version: 1.21
+authors: [ MeerPup1 ]
+description: I'm too lazy to write a description right now
+website: http://www.xumoye.net/
+commands:
+  revive:
+    description: Revives the specified player.
+    usage: /<command> [<player>] (updateCounter)
+  giverevives:
+    description: Gives a player a specified amount of revives.
+    usage: /<command> [<player>] [<amount>] (updateCounter)
+    aliases:
+      - giver
+      - giverevive
+  setrevivecounter:
+    description: Sets a player's revive counter.
+    usage: /<command> <player> <amount>
+    aliases:
+      - setr
+      - setrevives
+    permission: op
+  getrevivecounter:
+    description: Displays a player's revive counter.
+    usage: /<command> [<player>]
+    aliases:
+      - getr
+  removerevives:
+    description: Removes a specified amount of revives from a player.
+    usage: /<command> [<player>] [<amount>]
+    aliases:
+      - remover
+      - removerevive
+    permission: op
+  clearrevivecounter:
+    description: Sets the revive counter of the specified player to 0.
+    usage: /<command> [<player>]
+    aliases:
+      - clearrevives
+      - clearr
+    permission: op
+  defaultrevivecount:
+    description: Manages the amount of revives players start with.
+    usage: /<command> (set|get)
+    permission: op
