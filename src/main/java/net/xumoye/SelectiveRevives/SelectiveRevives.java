@@ -1,6 +1,8 @@
-//todo:
-//- add saving reviveCounts to file
-//- add killing functionality
+/*todo:
+- add saving reviveCounts to file
+- add killing functionality
+- add @ selector functionality
+*/
 
 package net.xumoye.SelectiveRevives;
 

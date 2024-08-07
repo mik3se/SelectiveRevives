@@ -34,7 +34,6 @@ public class GetReviveCounterCommand implements CommandExecutor {
                 }
                 else if(targetName.equals("@r")){
                     player.sendMessage(ChatColor.RED + "@r selectors is not currently supported");
-                    //todo: add @r support
                 }
                 else if(target == null){
                     player.sendMessage(ChatColor.RED + "No player was found");
@@ -80,7 +79,6 @@ public class GetReviveCounterCommand implements CommandExecutor {
                 }
                 else if(targetName.equals("@r") || targetName.equals("@p") || targetName.equals("@s")){
                     console.sendMessage(ChatColor.RED + "@ selectors are not currently supported from within console");
-                    //todo: add @ selector support
                 }
                 else if(target == null){
                     console.sendMessage(ChatColor.RED + "No player was found");

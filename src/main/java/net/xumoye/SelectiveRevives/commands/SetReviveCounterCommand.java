@@ -86,7 +86,6 @@ public class SetReviveCounterCommand implements CommandExecutor {
                 }
                 else if(targetName.equals("@r") || targetName.equals("@a")){
                     player.sendMessage(ChatColor.RED + "@a and @r selectors are not currently supported");
-                    //todo: add @a and @r support
                 }
 
                 if(!Utils.isInteger(args[1])){
@@ -118,7 +117,6 @@ public class SetReviveCounterCommand implements CommandExecutor {
                 }
                 else if(targetName.equals("@r") || targetName.equals("@a") || targetName.equals("@p") || targetName.equals("@s")){
                     console.sendMessage(ChatColor.RED + "@ selectors are not currently supported from within console");
-                    //todo: add @a selector support
                 }
                 if(!Utils.isInteger(args[1])){
                     console.sendMessage(ChatColor.RED + "Expected integer, found '" + args[1] + "'");
